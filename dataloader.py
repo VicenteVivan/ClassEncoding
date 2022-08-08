@@ -45,8 +45,8 @@ def transform_test():
         ])
     return m16_transform_list  
 
-train_dataset = datasets.CIFAR100('PATH_TO_STORE_TRAINSET', download=True, train=True, transform=transform_train)
-val_dataset= datasets.CIFAR100('PATH_TO_STORE_TESTSET', download=True, train=False, transform=transform_test)
+train_dataset = datasets.CIFAR100('PATH_TO_STORE_TRAINSET', download=True, train=True, transform=transform_train())
+val_dataset= datasets.CIFAR100('PATH_TO_STORE_TESTSET', download=True, train=False, transform=transform_test())
 
 import argparse
 if __name__ == "__main__":
