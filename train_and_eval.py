@@ -18,7 +18,6 @@ transform = transforms.Compose([transforms.ToTensor(),
                                 ])
 
 from config import getopt
-from models import getModels, getNames
 
 def getTrainingAccuracy(y_pred, y_true, opt=None): 
     # Discretize the predictions
@@ -127,8 +126,6 @@ if __name__ == '__main__':
                     entity='vicentevivan',
                     group="MNIST Switch")
     
-    model = getModels()[0]
-    model_name = getNames()[0]
     # model = model.to(opt.device)
     # criterion = torch.nn.MSELoss()
     criterion = torch.nn.CrossEntropyLoss()

@@ -35,7 +35,7 @@ if __name__ == '__main__':
     
     criterion = nn.CrossEntropyLoss()
     
-    w = wandb.init(project='CIFAR100 ConEmb',
+    w = wandb.init(project='ClCO',
                     entity='vicentevivan',
                     config=config)
     
